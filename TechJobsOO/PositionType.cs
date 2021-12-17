@@ -18,6 +18,22 @@ namespace TechJobsOO
             Value = value;
         }
 
+        public override bool Equals(object obj)
+        {
+            return obj is PositionType positionType &&
+              Id == positionType.Id;
+        }
+
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+
+        public override string ToString()
+        {
+            return Value;
+        }
+
         // TODO: Add custom Equals(), GetHashCode(), and ToString() methods.
     }
 }
