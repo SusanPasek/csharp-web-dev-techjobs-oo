@@ -65,7 +65,7 @@ namespace TechJobTests
                 $"ID: {job5.Id}\n" +
                 $"Name: {job5.Name}\n" +
                 $"Employer: {job5.EmployerName}\n" +
-                $"Location: Data not available\n" +
+                $"Location: Data not available\n" + 
                 $"Position Type: {job5.JobType}\n" +
                 $"Core Competency: Data not available\n";
             Assert.AreEqual(actual, expected);
